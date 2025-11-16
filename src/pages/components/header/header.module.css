@@ -1,0 +1,77 @@
+.logoText {
+  /* height: 80px; */
+  margin: 0;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  align-items: center;
+
+  padding: 10px;
+  background-color: var(--white);
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 0;
+}
+
+.menuOptions {
+  list-style: none;
+  color: #4b5563;
+  transition: 0.3s;
+}
+
+.menuOptions:hover {
+  list-style: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.buttonsAuth {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.loginButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-gray);
+  padding: 0 20px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.registerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  background-color: #2563eb;
+  height: 34px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.loginButton:hover {
+  color: #000000;
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.096);
+  border-radius: 5px;
+}
+
+.registerButton:hover {
+  background-color: #1e40af;
+  cursor: pointer;
+}

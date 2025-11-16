@@ -1,0 +1,102 @@
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+  padding: 20px;
+  padding: 40px;
+  min-height: 80vh;
+}
+
+.contentText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contentText h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.contentText p {
+  font-size: 1.125rem;
+  color: var(--text-gray);
+  text-align: center;
+  max-width: 600px;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  align-items: center;
+  justify-self: center;
+  gap: 8px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card1 {
+  background-color: ;
+}
+
+.iconeContainer {
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.card1 {
+  background-color: var(--blue);
+}
+
+.card2 {
+  background-color: #8839ff;
+}
+.card3 {
+  background-color: #1ba13d;
+}
+.card4 {
+  background-color: #ff5722;
+}
+
+.iconeContainer i::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card i {
+  font-size: 1.2rem;
+  border-radius: 15px;
+  color: var(--white);
+
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: var(--text-gray);
+}

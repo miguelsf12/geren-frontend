@@ -56,7 +56,7 @@
   justify-content: center;
   align-items: center;
   color: var(--white);
-  background-color: #2563eb;
+  background-color: var(--blue);
   height: 34px;
   padding: 10px;
   border-radius: 5px;

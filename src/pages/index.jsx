@@ -1,7 +1,8 @@
 import Head from "next/head"
 import "bootstrap-icons/font/bootstrap-icons.css" // icons bootstrap
-import homeStyles from "@/styles/Home.module.css"
 import Header from "./components/header/header"
+import Main from "./components/main/main"
+import Content from "./components/content/content"
 
 export default function Home() {
   return (
@@ -19,33 +20,9 @@ export default function Home() {
         ></link>
       </Head>
       <Header />
-      <main className={homeStyles.mainContainer}>
-        <div className={homeStyles.mainContainerDisclaimer}>
-          <i class="bi bi-lightning-charge"></i>
-          <p className={homeStyles.mainTextDisclaimer}>
-            A Plataforma #1 para profissionais da saúde
-          </p>
-        </div>
-        <div className={homeStyles.mainContainerTitle}>
-          <p>Organize seu consultório. Simplifique sua rotina.</p>
-        </div>
-        <div className={homeStyles.mainContainerSubtitle}>
-          <p>
-            Gerencie agendamentos, pacientes e finanças em uma única plataforma.
-            Mais tempo para cuidar, menos tempo com burocracia.
-          </p>
-        </div>
-        <div>
-          <button className={homeStyles.mainContainerButton}>
-            Comece Agora
-          </button>
-          <button className={homeStyles.mainContainerButton}>Ver Planos</button>
-        </div>
-        <div className={homeStyles.mainContainerSpan}>
-          <span>Sem cartão de crédito</span>
-          <span>Cancele quando quiser</span>
-        </div>
-      </main>
+
+      <Main />
+      <Content />
     </>
   )
 }

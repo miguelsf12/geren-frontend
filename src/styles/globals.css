@@ -6,6 +6,22 @@
   --footer-background: rgb(17 24 39);
   --text-gray: #4b5563;
   --text-gray-footer: #9ca3af;
+  --blue: #2563eb;
+  --gradient: linear-gradient(
+    to right top,
+    #befcff,
+    #86e7fd,
+    #49d0ff,
+    #00b5ff,
+    #0098ff,
+    #0087ff,
+    #1074ff,
+    #425dff,
+    #5c54ff,
+    #7349ff,
+    #8839ff,
+    #9d1eff
+  );
   --white: #fff;
 }
 

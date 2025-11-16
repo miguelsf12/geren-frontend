@@ -1,0 +1,165 @@
+.mainContainer {
+  background-image: linear-gradient(
+    to right bottom,
+    #ffffff 60%,
+    rgba(0, 136, 255, 0.171),
+    rgba(158, 30, 255, 0.068)
+  );
+
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, fr);
+  align-items: center;
+  align-content: space-evenly;
+  justify-items: center;
+  height: 100vh;
+  min-width: 100vw;
+  padding: 40px 80px;
+}
+
+.mainContainerDisclaimer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  background-color: #0088ff2a;
+  border-radius: 50px;
+  color: var(--blue);
+  height: 20px;
+  padding: 16px;
+  width: 360px;
+}
+
+.mainContainerText {
+  grid-column-start: 1;
+
+  grid-row-start: 2;
+}
+
+.mainTextDisclaimer {
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.mainContainerTitle {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  width: 584px;
+}
+
+.mainContainerTitle h1 {
+  font-size: 3.75rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #181818;
+}
+
+.mainContainerTitle span {
+  background: linear-gradient(
+    80deg,
+    #0087ff,
+    #1074ff,
+    #425dff,
+    #7349ff,
+    #8839ff,
+    #9d1eff
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mainContainerSubtitle {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  width: 584px;
+}
+
+.mainContainerSubtitle p {
+  font-size: 1.25rem;
+  line-height: 1.625;
+  color: var(--text-gray);
+}
+
+.mainContainerButton {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+.mainContainerButton {
+  display: flex;
+  font-size: 1.5rem;
+  gap: 26px;
+}
+
+.startNow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  color: var(--white);
+  font-weight: 400;
+  padding: 4px;
+  border-radius: 10px;
+  background-color: var(--blue);
+  transition: background-color 0.3s ease;
+}
+
+.startNow i::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ShowPlans {
+  border: rgba(128, 128, 128, 0.219) 2px solid;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+}
+
+.startNow:hover {
+  cursor: pointer;
+  background-color: #1e40af;
+}
+
+.mainContainerSpan {
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+
+.mainContainerSpan {
+  display: flex;
+  gap: 20px;
+  font-size: 1rem;
+  color: var(--text-gray);
+}
+
+.mainContainerSpan span i {
+  color: rgb(1, 158, 1);
+}
+
+.mainContainerImage {
+  justify-items: center;
+  align-items: center;
+  grid-row: span 5 / span 5;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  padding: 32px;
+  width: 680px;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0px 41px 50px 10px #7349ff57;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 15px;
+}

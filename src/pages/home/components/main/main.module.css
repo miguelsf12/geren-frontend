@@ -129,6 +129,16 @@
   background-color: #1e40af;
 }
 
+.startNow i {
+  transition: 0.5s;
+}
+
+.startNow:hover i {
+  cursor: pointer;
+  transform: translateX(5px);
+  transition: 0.5s;
+}
+
 .mainContainerSpan {
   grid-column-start: 1;
   grid-row-start: 4;
@@ -156,6 +166,7 @@
   background-color: var(--white);
   border-radius: 15px;
   box-shadow: 0px 41px 50px 10px #7349ff57;
+  position: relative;
 }
 
 .image {

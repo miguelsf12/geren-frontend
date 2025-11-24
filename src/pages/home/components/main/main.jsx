@@ -2,13 +2,13 @@ import "bootstrap-icons/font/bootstrap-icons.css" // icons bootstrap
 import homeStyles from "./main.module.css"
 import Link from "next/link"
 import Image from "next/image"
-import heroImage from "../../../../public/photo-1576091160399-112ba8d25d1d.jpeg"
+import heroImage from "../../../../../public/photo-1576091160399-112ba8d25d1d.jpeg"
 
 export default function Main() {
   return (
     <main className={homeStyles.mainContainer}>
       <div className={homeStyles.mainContainerDisclaimer}>
-        <i class="bi bi-lightning-charge"></i>
+        <i className="bi bi-lightning-charge"></i>
         <p className={homeStyles.mainTextDisclaimer}>
           Plataforma #1 para profissionais da saúde
         </p>
@@ -28,7 +28,7 @@ export default function Main() {
       </div>
       <div className={homeStyles.mainContainerButton}>
         <Link href={"#"} className={homeStyles.startNow}>
-          Comece Agora <i class="bi bi-arrow-right-short"></i>
+          Comece Agora <i className="bi bi-arrow-right-short"></i>
         </Link>
         <Link href={"#"} className={homeStyles.ShowPlans}>
           Ver Planos
@@ -36,10 +36,10 @@ export default function Main() {
       </div>
       <div className={homeStyles.mainContainerSpan}>
         <span>
-          <i class="bi bi-check2-circle"></i> Sem cartão de crédito
+          <i className="bi bi-check2-circle"></i> Sem cartão de crédito
         </span>
         <span>
-          <i class="bi bi-check2-circle"></i> Cancele quando quiser
+          <i className="bi bi-check2-circle"></i> Cancele quando quiser
         </span>
       </div>
       <div className={homeStyles.mainContainerImage}>

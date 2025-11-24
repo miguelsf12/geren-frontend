@@ -1,0 +1,172 @@
+.loginContainer {
+  background-image: linear-gradient(
+    to right top,
+    rgba(190, 252, 255, 0.329),
+    rgb(0, 135, 255, 0.329),
+    rgb(158, 30, 255)
+  );
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 100vw;
+  padding: 40px 80px;
+}
+
+.loginCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  background-color: #ffffff21;
+  width: 784px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 2px 1px rgba(255, 255, 255, 0.1);
+}
+.loginCard h2 {
+  grid-row: span 5 / span 5;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 4rem;
+  color: var(--blue);
+
+  text-align: justify;
+  background-color: var(--white);
+}
+.form {
+  grid-row: span 5 / span 5;
+  width: 484px;
+  min-height: 584px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 2px 1px rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
+}
+
+.form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    transparent,
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 15px;
+  outline: none;
+}
+
+/* Remove cor amarela/azul do autocomplete */
+.inputGroup input:-webkit-autofill,
+.inputGroup input:-webkit-autofill:hover,
+.inputGroup input:-webkit-autofill:focus,
+.inputGroup input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #ffffff46 inset !important;
+  box-shadow: 0 0 0 1000px #ffffff46 inset !important;
+  -webkit-text-fill-color: #000 !important; /* cor do texto */
+}
+
+/* Remove o azul da borda no foco do Chrome */
+.inputGroup input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.inputGroup label {
+  color: var(--text-gray);
+}
+
+.inputGroup input {
+  border-radius: 50px;
+  padding: 10px 20px;
+  width: 384px;
+  border: rgba(255, 255, 255, 0.219) 2px solid;
+  background-color: #ffffff46;
+}
+
+.inputGroup input::placeholder {
+  color: var(--text-gray);
+}
+
+.submitButton {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 10px 20px;
+  margin: 15px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+  background-color: #1e40af;
+}
+
+.loginWithGoogle {
+  background-color: var(--white);
+  color: var(--blue);
+  padding: 10px 20px;
+  margin: 15px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+
+.loginWithGoogle:hover {
+  cursor: pointer;
+  background-color: #ffffff80;
+}
+
+.firstAcess {
+  display: block;
+  font-size: 16px;
+  color: var(--blue);
+  margin: 0px 15px;
+}
+
+.firstAcess:hover {
+  cursor: pointer;
+  color: #1e40af;
+}

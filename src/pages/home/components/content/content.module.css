@@ -6,6 +6,8 @@
   padding: 20px;
   padding: 40px;
   min-height: 80vh;
+  transition: all ease-in-out 0.5s;
+  transform: translateY(-20px);
 }
 
 .contentText {
@@ -50,11 +52,11 @@
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card1 {
-  background-color: ;
+.card:hover .iconeContainer {
+  transform: scale(1.1);
 }
 
 .iconeContainer {
@@ -64,16 +66,20 @@
 }
 .card1 {
   background-color: var(--blue);
+  transition: 0.5s;
 }
 
 .card2 {
   background-color: #8839ff;
+  transition: 0.5s;
 }
 .card3 {
   background-color: #1ba13d;
+  transition: 0.5s;
 }
 .card4 {
   background-color: #ff5722;
+  transition: 0.5s;
 }
 
 .iconeContainer i::before {
